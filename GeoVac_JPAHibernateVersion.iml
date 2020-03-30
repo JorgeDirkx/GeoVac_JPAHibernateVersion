@@ -5,7 +5,7 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <datasource-mapping>
-          <factory-entry name="geovac_db" />
+          <factory-entry name="geovac_db" value="47637aaf-9131-44db-9bcb-7fc0cd6e0107" />
         </datasource-mapping>
         <naming-strategy-map />
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
