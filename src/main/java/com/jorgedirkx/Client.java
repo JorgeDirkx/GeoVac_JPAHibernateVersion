@@ -1,9 +1,6 @@
 package com.jorgedirkx;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 @Entity
 @Table (name = "client")
@@ -15,6 +12,7 @@ public class Client {
     private Date dob;
     private String passportNr;
     private String gender;
+
 
     public int getId() {
         return id;
