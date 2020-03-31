@@ -18,6 +18,7 @@ public class Registration {
     private Date vaccination6Yrs;
     private Date vaccination12Yrs;
     private Date vaccination14Yrs;
+    //FK Vaccine_type AND FK Client_Id
 
 
     public int getId() {

@@ -1,7 +1,8 @@
 package com.jorgedirkx;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.util.*;
+
 @Entity
 @Table (name = "client")
 public class Client {
@@ -12,7 +13,6 @@ public class Client {
     private Date dob;
     private String passportNr;
     private String gender;
-
 
 
     public int getId() {

@@ -13,13 +13,14 @@ public class Main {
         EntityManager em = emf.createEntityManager();
 
         Client client1 = new Client();
-        client1.setName("child8");
+        client1.setName("test person");
         client1.setGender("male");
 
         Location location1 = new Location();
-        location1.setLocation("Lagos, Nigeria");
+        location1.setLocation("Nairobi, Kenya");
 
         location1.setClient(client1);
+
 
         EntityTransaction et = em.getTransaction();
 
