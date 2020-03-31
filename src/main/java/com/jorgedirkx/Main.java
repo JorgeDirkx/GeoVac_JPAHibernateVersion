@@ -17,7 +17,7 @@ public class Main {
         client1.setGender("male");
 
         Location location1 = new Location();
-        location1.setLocation("Nairobi, Kenya");
+        location1.setLocation("city x, country y");
 
         location1.setClient(client1);
 
