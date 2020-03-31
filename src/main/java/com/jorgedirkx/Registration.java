@@ -19,12 +19,6 @@ public class Registration {
     private Date vaccination12Yrs;
     private Date vaccination14Yrs;
 
-    @ManyToOne
-            @JoinColumn(name = "id")
-    Vaccine vaccine;
-    @ManyToOne
-            @JoinColumn(name ="id")
-    Client client;
 
     public int getId() {
         return id;
@@ -98,21 +92,7 @@ public class Registration {
         this.vaccination14Yrs = vaccination14Yrs;
     }
 
-    public Vaccine getVaccine() {
-        return vaccine;
-    }
 
-    public void setVaccine(Vaccine vaccine) {
-        this.vaccine = vaccine;
-    }
-
-    public Client getClient() {
-        return client;
-    }
-
-    public void setClient(Client client) {
-        this.client = client;
-    }
 
     @Override
     public String toString() {
@@ -126,8 +106,6 @@ public class Registration {
                 ", vaccination6Yrs=" + vaccination6Yrs +
                 ", vaccination12Yrs=" + vaccination12Yrs +
                 ", vaccination14Yrs=" + vaccination14Yrs +
-                ", vaccine=" + vaccine +
-                ", client=" + client +
                 '}';
     }
 }
