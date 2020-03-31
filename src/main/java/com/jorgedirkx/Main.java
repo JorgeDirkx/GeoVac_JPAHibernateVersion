@@ -12,6 +12,7 @@ public class Main {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("geovac_db");
         EntityManager em = emf.createEntityManager();
 
+        //entities
         Client client1 = new Client();
         client1.setName("test person");
         client1.setGender("male");
