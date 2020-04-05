@@ -5,6 +5,14 @@ import java.util.*;
 
 @Entity
 @Table (name = "client")
+
+/*@NamedQueries({
+        @NamedQuery(name = "Client.findByName", query = "SELECT c from Client c where c.name = :name"),
+        @NamedQuery(name ="Client.findAll", query = "SELECT c  from Client c")
+})
+
+ */
+
 public class Client {
 
     @Id @GeneratedValue
@@ -14,6 +22,21 @@ public class Client {
     private String passportNr;
     private String gender;
 
+    public Client() {
+    }
+
+    public Client(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Client (int id, String name, Date dob, String passportNr, String gender){
+        this.id = id;
+        this.name = name;
+        this.dob = dob;
+        this.passportNr = passportNr;
+        this.gender = gender;
+    }
 
     public int getId() {
         return id;
