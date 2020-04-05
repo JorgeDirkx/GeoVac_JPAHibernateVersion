@@ -8,6 +8,10 @@ public class ClientRepositoryImpl implements ClientRepository {
 
     private EntityManager em;
 
+    public ClientRepositoryImpl(EntityManager em) {
+        this.em = em;
+    }
+
     @Override
     public Client getClientById(int id) {
         return em.find(Client.class,id);
