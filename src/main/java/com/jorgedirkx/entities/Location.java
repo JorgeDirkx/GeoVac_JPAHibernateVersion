@@ -1,4 +1,6 @@
-package com.jorgedirkx;
+package com.jorgedirkx.entities;
+
+import com.jorgedirkx.entities.Client;
 
 import javax.persistence.*;
 

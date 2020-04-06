@@ -2,8 +2,9 @@ TO DO:
 ManyToMany relation Vaccine - Client with jointable Registration
 Location to MAP: front end connection
 Method building
-sql file
+sql file to modify
 JPQL
+DAO...
 
 Prototype Hibernate Version GeoVac
 Location based registration software for remote areas

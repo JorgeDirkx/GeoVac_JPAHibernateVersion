@@ -1,4 +1,4 @@
-package com.jorgedirkx;
+package com.jorgedirkx.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,4 +1,7 @@
-package com.jorgedirkx;
+package com.jorgedirkx.application;
+
+import com.jorgedirkx.entities.Client;
+import com.jorgedirkx.entities.Location;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -12,26 +15,13 @@ public class Main {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("geovac_db");
         EntityManager em = emf.createEntityManager();
 
-        Client client = new Client();
-        client.setName("testwithrepositoryperson");
-
-        //create our repositories
-        ClientRepositoryImpl clientRepository = new ClientRepositoryImpl(em);
-
-        clientRepository.saveClient(client);
-
-        //use of implementations
-
-
-
-
-        /*//entities
+        //entities
         Client client1 = new Client();
-        client1.setName("test person");
-        client1.setGender("male");
+        client1.setName("test person 10");
+        client1.setGender("female");
 
         Location location1 = new Location();
-        location1.setLocation("city x, country y");
+        location1.setLocation("city test, country test");
 
         location1.setClient(client1);
 
@@ -47,14 +37,14 @@ public class Main {
 
         et.commit();
 
-        em.close();
-        emf.close();
-/*
         //FINDING A CLIENT WITH LOCATION ID PRINT OUT
         Integer primaryKey =5;
         Location location= em.find(Location.class, primaryKey);
         System.out.println(location);
-*/
+
+        em.close();
+        emf.close();
+
 
     }
 }
