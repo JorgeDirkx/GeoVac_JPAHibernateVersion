@@ -1,7 +1,7 @@
 TO DO:
-ManyToMany relation Vaccine - Client with jointable Registration
+ManyToMany relation Vaccine - Client with jointable Registration several attributes
 Location to MAP: front end connection
-Method building
+Method building repository files
 sql file to modify
 JPQL
 DAO...
