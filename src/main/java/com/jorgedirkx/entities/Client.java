@@ -6,7 +6,7 @@ import java.util.*;
 @Entity
 @Table (name = "client")
 
-/*@NamedQueries({
+/*@NamedQueries({ VIEW DOCUMENTATION
         @NamedQuery(name = "Client.findByName", query = "SELECT c from Client c where c.name = :name"),
         @NamedQuery(name ="Client.findAll", query = "SELECT c  from Client c")
 })
