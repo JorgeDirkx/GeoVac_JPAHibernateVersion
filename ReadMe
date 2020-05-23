@@ -1,10 +1,5 @@
-TO DO:
-ManyToMany relation Vaccine - Client with jointable Registration several attributes
-Location to MAP: front end connection
-Method building repository files
-sql file to modify
-JPQL
-DAO...
-
 Prototype Hibernate Version GeoVac
 Location based registration software for remote areas
+
+TO DO:
+ManyToMany relation Vaccine - Client with jointable Registration several attributes
