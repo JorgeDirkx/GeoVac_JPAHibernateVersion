@@ -31,10 +31,18 @@ public class Main {
 
         et.begin();
 
-        //instructions to the DB
+        //instructions to the DB:
 
+        //INSERT records
         em.persist(client1);
         em.persist(location1);
+
+        //UPDATE records
+        /*em.merge(client1); or through find method + eg setClient...*/
+
+        //DELETE records
+        /*Client client1 = em.find(Client.class, primaryKey:4);
+         em.remove(client1) */
 
         et.commit();
 
@@ -42,7 +50,7 @@ public class Main {
         Integer primaryKey =5;
         Location location= em.find(Location.class, primaryKey);
         System.out.println(location);
-
+        
         em.close();
         emf.close();
 
