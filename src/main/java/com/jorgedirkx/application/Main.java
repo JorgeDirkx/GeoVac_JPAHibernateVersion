@@ -13,9 +13,10 @@ public class Main {
 
         //setting up the EntityManagerFactory to connect with DB
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("geovac_db");
+        //EntityManager allows you to work with the DB
         EntityManager em = emf.createEntityManager();
 
-        //entities
+        //turn class into entities: use annotations @entity in order to use .persist and @Id for primarykey
         Client client1 = new Client();
         client1.setName("test person 10");
         client1.setGender("female");
